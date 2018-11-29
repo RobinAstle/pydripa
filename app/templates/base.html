@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% if title %}
+        <title>{{ title }} - pydripa</title>
+    {% else %}
+        <title>Welcome to pydripa!</title>
+    {% endif %}
+</head>
+<body>
+    <div>pydripa: <a href="/index">Home</a></div>
+    <hr/>
+        {% block content %}{% endblock %}
+</body>
+</html>

@@ -1,8 +1,15 @@
-<html>
-    <head>
-        <title>{{ title }} - Microblog</title>
-    </head>
-    <body>
-        <h1>Hello, {{ user.username }}!</h1>
-    </body>
-</html>
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Hello, {{ user.username }}!</h1>
+    <table>
+        <tr>
+            <th>Timestamp</th>
+            <th>Event</th>
+            <th>Additional Data</th>
+        </tr>
+        {% for event in events %}
+            <tr><td>{{ event.timestamp }}</td><td>{{ event.description }}</td><td>{{ event.additionalData }}</td></tr>
+        {% endfor %}
+        </table>
+{% endblock %}
