@@ -107,4 +107,4 @@ venv.bak/
 
 .idea/
 
-application_secret.txt
+graph_application_secret.txt
