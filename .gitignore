@@ -107,4 +107,4 @@ venv.bak/
 
 .idea/
 
-app.db
+application_secret.txt
